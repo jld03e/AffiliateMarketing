@@ -1,0 +1,19 @@
+$navbarColor: rgba(52, 152, 219, 1);
+$jumboColor: rgba(255, 255, 204, 1);
+$fontFam: 'Staatliches', cursive;
+
+.navbar {
+    background: $navbarColor;
+    font-family: $fontFam;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.jumboHeading {
+    text-align: center;
+    background: $jumboColor;
+    font-family: $fontFam;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 15px;
+}
