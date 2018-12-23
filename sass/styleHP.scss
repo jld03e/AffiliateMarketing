@@ -1,19 +1,41 @@
 $navbarColor: rgba(52, 152, 219, 1);
-$jumboColor: rgba(255, 255, 204, 1);
+$jumboColor: rgba(254, 241, 96, 1);
 $fontFam: 'Staatliches', cursive;
 
-.navbar {
-    background: $navbarColor;
-    font-family: $fontFam;
-    padding: 5px;
+@mixin bordRadius {
     border-radius: 15px;
 }
 
+.navbar {
+    @include bordRadius();
+    background: $navbarColor;
+    font-family: $fontFam;
+    padding: 5px;
+}
+
+.navbar {
+    ul {
+        list-style-type: none;
+        display: block;
+        overflow: hidden;
+        position: sticky;
+    }
+}
+
+.navbar {
+    ul li {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 3px 5px;
+    }
+}
+
 .jumboHeading {
+    @include bordRadius();
     text-align: center;
     background: $jumboColor;
     font-family: $fontFam;
     padding: 10px;
     font-size: 25px;
-    border-radius: 15px;
 }

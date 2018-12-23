@@ -1,5 +1,9 @@
-.navbar { background: #3498db; font-family: "Staatliches", cursive; padding: 5px; border-radius: 15px; }
+.navbar { border-radius: 15px; background: #3498db; font-family: "Staatliches", cursive; padding: 5px; }
 
-.jumboHeading { text-align: center; background: #ffffcc; font-family: "Staatliches", cursive; padding: 10px; font-size: 25px; border-radius: 15px; }
+.navbar ul { list-style-type: none; display: block; overflow: hidden; position: sticky; }
+
+.navbar ul li { float: left; display: block; text-align: center; padding: 3px 5px; }
+
+.jumboHeading { border-radius: 15px; text-align: center; background: #fef160; font-family: "Staatliches", cursive; padding: 10px; font-size: 25px; }
 
 /*# sourceMappingURL=styleHP.css.map */
