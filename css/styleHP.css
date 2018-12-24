@@ -6,4 +6,14 @@
 
 .jumboHeading { border-radius: 15px; text-align: center; background: #fef160; font-family: "Staatliches", cursive; padding: 10px; font-size: 25px; }
 
+.about { border-radius: 15px; background: #c8f7c5; padding: 10px; }
+.about h3 { font-family: "Staatliches", cursive; text-align: center; font-size: 35px; }
+.about p { font-family: "Montserrat", sans-serif; text-align: center; }
+
+header { text-align: center; }
+header h1 { font-size: 40px; font-family: "Staatliches", cursive; }
+
+main h3 { font-family: "Staatliches", cursive; }
+main p { font-family: "Montserrat", sans-serif; }
+
 /*# sourceMappingURL=styleHP.css.map */

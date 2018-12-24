@@ -1,6 +1,14 @@
 $navbarColor: rgba(52, 152, 219, 1);
 $jumboColor: rgba(254, 241, 96, 1);
 $fontFam: 'Staatliches', cursive;
+$fontFamMont: 'Montserrat', sans-serif;
+$aboutColor: rgba(200, 247, 197, 1);
+
+@mixin flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 @mixin bordRadius {
     border-radius: 15px;
@@ -38,4 +46,36 @@ $fontFam: 'Staatliches', cursive;
     font-family: $fontFam;
     padding: 10px;
     font-size: 25px;
+}
+
+.about {
+    @include bordRadius();
+    background: $aboutColor;
+    padding: 10px;
+    h3 {
+        font-family: $fontFam;
+        text-align: center;
+        font-size: 35px;
+    }
+    p {
+        font-family: $fontFamMont;
+        text-align: center;
+    }
+}
+
+header {
+    text-align: center;
+    h1 {
+        font-size: 40px;
+        font-family: $fontFam;
+    }
+}
+
+main {
+    h3 {
+    font-family: $fontFam;
+    }
+    p{
+        font-family: $fontFamMont;
+    }
 }
