@@ -1,15 +1,24 @@
-.navbar { border-radius: 15px; background: #3498db; font-family: "Staatliches", cursive; padding: 5px; }
-.navbar ul { list-style-type: none; display: block; overflow: hidden; position: sticky; top: 0; }
-.navbar li { float: left; display: block; text-align: center; padding: 7px 12px; font-size: 35px; border-right: 2px solid black; }
+nav { position: sticky; top: 0px; border-radius: 15px; background: #3498db; font-family: "Staatliches", cursive; padding: 5px; }
+nav ul { list-style-type: none; display: block; overflow: hidden; }
+nav li { float: left; display: block; text-align: center; padding: 7px 12px; font-size: 20px; border-right: 2px solid black; }
+nav li a { text-decoration: none; }
 
-.jumboHeading { border-radius: 15px; text-align: center; background: #fef160; font-family: "Staatliches", cursive; padding: 10px; font-size: 25px; }
+nav ul li:hover { text-shadow: 5px 5px 5px grey; }
+
+nav ul li a:link { text-decoration: none; }
+
+nav ul li a:visited { color: black; text-decoration: none; }
+
+.jumboHeading { border-radius: 15px; text-align: center; background: #fef160; font-family: "Staatliches", cursive; padding: 10px; font-size: 35px; }
 
 .about { border-radius: 15px; background: #c8f7c5; padding: 10px; }
 .about h3 { font-family: "Staatliches", cursive; text-align: center; font-size: 35px; }
-.about p { font-family: "Montserrat", sans-serif; text-align: center; }
+.about p { border-radius: 15px; border: black; border-style: solid; border-width: 5px; padding: 10px; font-family: "Montserrat", sans-serif; text-align: center; line-height: 25px; }
 
 header { text-align: center; }
 header h1 { font-size: 40px; font-family: "Staatliches", cursive; }
+
+header h3 { font-family: "Staatliches", cursive; font-size: 35px; }
 
 main h3 { font-family: "Staatliches", cursive; }
 main p { font-family: "Montserrat", sans-serif; }

@@ -14,7 +14,21 @@ $aboutColor: rgba(200, 247, 197, 1);
     border-radius: 15px;
 }
 
-.navbar {
+@mixin paraBord {
+    border-radius: 15px;
+    border: black;
+    border-style: solid;
+    border-width: 5px;
+    padding: 10px;
+}
+
+@mixin shadowLets {
+    text-shadow: 5px 5px 5px grey;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
     @include bordRadius();
     background: $navbarColor;
     font-family: $fontFam;
@@ -23,18 +37,33 @@ $aboutColor: rgba(200, 247, 197, 1);
         list-style-type: none;
         display: block;
         overflow: hidden;
-        position: sticky;
-        top: 0;
+
     }
     li {
         float: left;
         display: block;
         text-align: center;
         padding: 7px 12px;
-        font-size: 35px;
+        font-size: 20px;
         border-right: 2px solid black;
     }
+    li a{
+        text-decoration: none;
+    }
 }
+
+nav ul li:hover {
+    @include shadowLets();
+}
+
+nav ul li a:link {
+    text-decoration: none;
+}
+nav ul li a:visited {
+    color: black;
+    text-decoration: none;
+}
+
 
 .jumboHeading {
     @include bordRadius();
@@ -42,7 +71,7 @@ $aboutColor: rgba(200, 247, 197, 1);
     background: $jumboColor;
     font-family: $fontFam;
     padding: 10px;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .about {
@@ -55,8 +84,10 @@ $aboutColor: rgba(200, 247, 197, 1);
         font-size: 35px;
     }
     p {
+        @include paraBord();
         font-family: $fontFamMont;
         text-align: center;
+        line-height: 25px;
     }
 }
 
@@ -65,6 +96,13 @@ header {
     h1 {
         font-size: 40px;
         font-family: $fontFam;
+    }
+}
+
+header {
+    h3 {
+        font-family: $fontFam;
+        font-size: 35px;
     }
 }
 
