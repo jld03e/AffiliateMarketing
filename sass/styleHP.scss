@@ -19,23 +19,20 @@ $aboutColor: rgba(200, 247, 197, 1);
     background: $navbarColor;
     font-family: $fontFam;
     padding: 5px;
-}
-
-.navbar {
     ul {
         list-style-type: none;
         display: block;
         overflow: hidden;
         position: sticky;
+        top: 0;
     }
-}
-
-.navbar {
-    ul li {
+    li {
         float: left;
         display: block;
         text-align: center;
-        padding: 3px 5px;
+        padding: 7px 12px;
+        font-size: 35px;
+        border-right: 2px solid black;
     }
 }
 
