@@ -2,3 +2,13 @@
 
 @import 'colors';
 
+
+.container-1 {
+    @include flexBox;
+    .card {
+        @include cards;
+    }
+    img {
+        @include prodImg;
+    }
+}
