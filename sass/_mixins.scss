@@ -1,0 +1,21 @@
+@mixin flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin bordRadius {
+    border-radius: 15px;
+}
+
+@mixin paraBord {
+    border-radius: 15px;
+    border: black;
+    border-style: solid;
+    border-width: 5px;
+    padding: 10px;
+}
+
+@mixin shadowLets {
+    text-shadow: 5px 5px 5px grey;
+}
