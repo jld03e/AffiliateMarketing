@@ -7,8 +7,9 @@
     @include flexBox;
     .card {
         @include cards;
-    }
-    img {
-        @include prodImg;
-    }
+        img {
+            @include prodImg;
+            align-items: center;
+        }
+    }         
 }
