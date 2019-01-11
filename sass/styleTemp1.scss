@@ -9,7 +9,11 @@
         @include cards;
         img {
             @include prodImg;
-            align-items: center;
         }
     }         
+}
+
+.jumboHeading {
+    @include heading;
+    @include headingImg;
 }

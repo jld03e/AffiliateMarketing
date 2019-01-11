@@ -1,5 +1,7 @@
 .container-1 { display: flex; flex-wrap: wrap; justify-content: space-evenly; }
 .container-1 .card { padding: 10px; border: 2px solid black; border-radius: 10px; height: 30%; width: 30%; }
-.container-1 .card img { border-radius: 8px; display: block; margin-left: auto; margin-right: auto; width: 300px; height: 300px; align-items: center; }
+.container-1 .card img { border: 10px solid #abb7b7; border-radius: 5px; display: block; align-items: center; margin-left: auto; margin-right: auto; max-width: 65%; height: auto; }
+
+.jumboHeading { text-align: center; padding: 10px; font-size: 35px; background-image: url("../images/jumboBack.jpg"); background-color: blueviolet; height: 500px; background-position: center; background-repeat: no-repeat; background-size: cover; }
 
 /*# sourceMappingURL=styleTemp1.css.map */
