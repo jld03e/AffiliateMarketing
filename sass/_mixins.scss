@@ -1,19 +1,45 @@
 @mixin flexBox {
+    background-color: $flexBoxColorPurple;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 50px;
+}
+
+@mixin navBar {
+    position: sticky;
+    top: 0px;
+    background: $flexBoxColorPurple;
+    font-family: 'Righteous', cursive;
+    padding: 5px;
+}
+
+@mixin uListNav {
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+@mixin lItemNav {
+    color: $flexBoxColorGreen;
+    text-align: center;
+    display: inline;
+    padding: 7px 12px;
+    font-size: 20px;
+    border-right: 2px solid black;
 }
 
 @mixin cards {
+    background-color: $flexBoxColorGreen;
     padding: 10px;
-    border: 2px solid black;
     border-radius: 10px;
     height: 30%;
     width: 30%;
+    // box-shadow: 10px 10px 10px 10px $flexBoxColorGreen;
 }
 
 @mixin prodImg {
-    border: 10px solid rgba(171, 183, 183, 1);
+    border: 5px solid white;
     border-radius: 5px;
     display: block;
     align-items: center;
@@ -32,19 +58,17 @@
 }
 
 @mixin heading {
+    font-family: 'Righteous', cursive;
+    text-shadow: 0px 0px 10px darkgrey;
     text-align: center;
-    padding: 10px;
+    padding: 35px;
     font-size: 35px;
 }
 
 @mixin headingImg {
+    padding: 20px;
     background-image: url("../images/jumboBack.jpg");
-    background-color: blueviolet; 
     height: 500px;
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover; }
-
-@mixin shadowLets {
-    text-shadow: 5px 5px 5px grey;
-}

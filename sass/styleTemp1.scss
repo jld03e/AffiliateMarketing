@@ -2,6 +2,9 @@
 
 @import 'colors';
 
+// body {
+//     background-color: black;
+// }
 
 .container-1 {
     @include flexBox;
@@ -16,4 +19,26 @@
 .jumboHeading {
     @include heading;
     @include headingImg;
+    padding: 15px;
+    h1 {
+        color: $flexBoxColorGreen;
+    }
+}
+
+h2 {
+    color: $flexBoxColorPurple;
+}
+
+nav {
+    @include navBar;
+    ul {
+        @include uListNav;
+        li {
+            @include lItemNav;
+             a {
+                color: $flexBoxColorGreen;
+                text-decoration: none;
+            }
+        }
+    }
 }
