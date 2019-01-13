@@ -82,6 +82,43 @@ nav {
     }
 }
 
+.container-1 {
+    button {
+        @include cardButtons;
+    }
+}
+
+.container-2 {
+    @include flexBox;
+    .card {
+        @include cards;
+                   img {
+                        @include prodImg;
+            }
+        }
+    }
+
+.container-2 {
+    .card {
+        h1 {
+            @include cardHeading;
+        }
+    }
+}
+.container-2 {
+    .card {
+        p {
+            @include cardText;
+        }
+    }
+}
+
+.container-2 {
+    button {
+        @include cardButtons;
+    }
+}
+
 .aboutSec {
     padding: 20px;
     background-image: linear-gradient($flexBoxColorPurple, $flexBoxColorGreen);    
@@ -94,6 +131,7 @@ nav {
 .aboutSec {
     p {
         @include cardText;
+        font-weight: bold;
     }
 }
 
@@ -106,7 +144,17 @@ nav {
 }
 
 .contactSec {
+    background-image: linear-gradient($flexBoxColorGreen, $flexBoxColorPurple);    
     p {
         @include cardText;
+        font-weight: bold;
+    }
+}
+
+footer {
+    @include footer;
+    p {
+        @include cardText;
+        font-weight: bolder;
     }
 }
