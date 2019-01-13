@@ -6,9 +6,36 @@
 //     background-color: black;
 // }
 
+.jumboHeading {
+    @include heading;
+    @include headingImg;
+    padding: 15px;
+    h1 {
+        color: $flexBoxColorGreen;
+    }
+}
+
+h2 {
+    color: $flexBoxColorPurple;
+}
+
+nav {
+    @include navBar;
+    ul {
+        @include uListNav;
+        li {
+            @include lItemNav;
+             a {
+                color: $flexBoxColorGreen;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 .recordsSec {
     background-image: linear-gradient($flexBoxColorGreen, $flexBoxColorPurple);
-    padding: 30px;
+    padding: 20px;
         h1 {
             color: $flexBoxColorPurple;
             font-family: $flexBoxFontHeader;
@@ -52,29 +79,22 @@
     }
 }
 
-.jumboHeading {
-    @include heading;
-    @include headingImg;
-    padding: 15px;
+.aboutSec {
+    padding: 20px;
+    background-image: linear-gradient($flexBoxColorPurple, $flexBoxColorGreen);    
     h1 {
+        @include cardHeading;
         color: $flexBoxColorGreen;
     }
 }
 
-h2 {
-    color: $flexBoxColorPurple;
+.aboutSec {
+    p {
+        @include cardText;
+    }
 }
 
-nav {
-    @include navBar;
-    ul {
-        @include uListNav;
-        li {
-            @include lItemNav;
-             a {
-                color: $flexBoxColorGreen;
-                text-decoration: none;
-            }
-        }
-    }
+.contactSec {
+    background: $flexBoxColorGreen;
+    padding: 20px;
 }
