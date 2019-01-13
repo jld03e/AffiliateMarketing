@@ -6,6 +6,27 @@
 //     background-color: black;
 // }
 
+.recordsSec {
+    background-image: linear-gradient($flexBoxColorGreen, $flexBoxColorPurple);
+    padding: 30px;
+        h1 {
+            color: $flexBoxColorPurple;
+            font-family: $flexBoxFontHeader;
+            text-shadow: 0px 0px 5px white;
+            text-align: center;
+            font-size: 45px;
+    }
+}
+
+.recordsSec {
+        h2 {
+            text-align: center;
+            color: $flexBoxColorGreen;
+            font-family: $flexBoxFontHeader;
+            font-size: 35px;
+        }
+}
+
 .container-1 {
     @include flexBox;
     .card {
@@ -19,10 +40,14 @@
 .container-1 {
     .card {
         h1 {
-            font-family: $flexBoxFontHeader;
-            p {
-                font-family: $flexBoxFontText;
-            }
+            @include cardHeading;
+        }
+    }
+}
+.container-1 {
+    .card {
+        p {
+            @include cardText;
         }
     }
 }

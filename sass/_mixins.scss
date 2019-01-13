@@ -38,6 +38,19 @@
     // box-shadow: 10px 10px 10px 10px $flexBoxColorGreen;
 }
 
+@mixin cardHeading {
+    text-align: center;
+    color: $flexBoxColorPurple;
+    text-shadow: 0px 0px 10px grey;
+    font-family: $flexBoxFontHeader;
+}
+
+@mixin cardText {
+    text-align: center;
+    font-family: $flexBoxFontText;
+
+}
+
 @mixin prodImg {
     border: 5px solid white;
     border-radius: 5px;
@@ -59,10 +72,10 @@
 
 @mixin heading {
     font-family: 'Righteous', cursive;
-    text-shadow: 5px 5px 5px darkgrey;
+    text-shadow: 0px 0px 15px white;
     text-align: center;
-    padding: 35px;
-    font-size: 35px;
+    padding: 30px;
+    font-size: 65px;
 }
 
 @mixin headingImg {
