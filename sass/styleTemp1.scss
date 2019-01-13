@@ -6,6 +6,21 @@
 //     background-color: black;
 // }
 
+nav {
+    @include navBar;
+    ul {
+        @include uListNav;
+        li {
+            font-size: 75px;
+            @include lItemNav;
+             a {
+                color: $flexBoxColorGreen;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 .jumboHeading {
     @include heading;
     @include headingImg;
@@ -15,21 +30,9 @@
     }
 }
 
-h2 {
-    color: $flexBoxColorPurple;
-}
-
-nav {
-    @include navBar;
-    ul {
-        @include uListNav;
-        li {
-            @include lItemNav;
-             a {
-                color: $flexBoxColorGreen;
-                text-decoration: none;
-            }
-        }
+.jumboHeading {
+    h2 {
+        color: $flexBoxColorPurple;
     }
 }
 
@@ -97,4 +100,13 @@ nav {
 .contactSec {
     background: $flexBoxColorGreen;
     padding: 20px;
+    h1 {
+        @include cardHeading;
+    }
+}
+
+.contactSec {
+    p {
+        @include cardText;
+    }
 }

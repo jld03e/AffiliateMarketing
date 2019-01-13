@@ -1,12 +1,12 @@
+nav { position: sticky; top: 0px; background: #be90d4; font-family: 'Righteous', cursive; padding: 5px; }
+nav ul { list-style-type: none; text-align: center; overflow: hidden; }
+nav ul li { font-size: 75px; color: #c8f7c5; text-align: center; display: inline; padding: 7px 12px; font-size: 20px; border-right: 2px solid black; }
+nav ul li a { color: #c8f7c5; text-decoration: none; }
+
 .jumboHeading { font-family: 'Righteous', cursive; text-shadow: 0px 0px 15px white; text-align: center; padding: 30px; font-size: 65px; padding: 20px; background-image: url("../images/jumboBack.jpg"); height: 500px; background-position: center; background-repeat: no-repeat; background-size: cover; padding: 15px; }
 .jumboHeading h1 { color: #c8f7c5; }
 
-h2 { color: #be90d4; }
-
-nav { position: sticky; top: 0px; background: #be90d4; font-family: 'Righteous', cursive; padding: 5px; }
-nav ul { list-style-type: none; text-align: center; overflow: hidden; }
-nav ul li { color: #c8f7c5; text-align: center; display: inline; padding: 7px 12px; font-size: 20px; border-right: 2px solid black; }
-nav ul li a { color: #c8f7c5; text-decoration: none; }
+.jumboHeading h2 { color: #be90d4; }
 
 .recordsSec { background-image: linear-gradient(#c8f7c5, #be90d4); padding: 20px; }
 .recordsSec h1 { color: #be90d4; font-family: "Righteous", cursive; text-shadow: 0px 0px 5px white; text-align: center; font-size: 45px; }
@@ -27,5 +27,8 @@ nav ul li a { color: #c8f7c5; text-decoration: none; }
 .aboutSec p { text-align: center; font-family: "Open Sans", sans-serif; }
 
 .contactSec { background: #c8f7c5; padding: 20px; }
+.contactSec h1 { text-align: center; color: #be90d4; text-shadow: 0px 0px 10px grey; font-family: "Righteous", cursive; }
+
+.contactSec p { text-align: center; font-family: "Open Sans", sans-serif; }
 
 /*# sourceMappingURL=styleTemp1.css.map */
