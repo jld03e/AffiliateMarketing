@@ -2,7 +2,10 @@
 .container-1 .card { background-color: #c8f7c5; padding: 10px; border-radius: 10px; height: 30%; width: 30%; }
 .container-1 .card img { border: 5px solid white; border-radius: 5px; display: block; align-items: center; margin-left: auto; margin-right: auto; max-width: 65%; height: auto; }
 
-.jumboHeading { font-family: 'Righteous', cursive; text-shadow: 0px 0px 10px darkgrey; text-align: center; padding: 35px; font-size: 35px; padding: 20px; background-image: url("../images/jumboBack.jpg"); height: 500px; background-position: center; background-repeat: no-repeat; background-size: cover; padding: 15px; }
+.container-1 .card h1 { font-family: "Righteous", cursive; }
+.container-1 .card h1 p { font-family: "Open Sans", sans-serif; }
+
+.jumboHeading { font-family: 'Righteous', cursive; text-shadow: 5px 5px 5px darkgrey; text-align: center; padding: 35px; font-size: 35px; padding: 20px; background-image: url("../images/jumboBack.jpg"); height: 500px; background-position: center; background-repeat: no-repeat; background-size: cover; padding: 15px; }
 .jumboHeading h1 { color: #c8f7c5; }
 
 h2 { color: #be90d4; }

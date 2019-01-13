@@ -10,10 +10,21 @@
     @include flexBox;
     .card {
         @include cards;
-        img {
-            @include prodImg;
+                   img {
+                        @include prodImg;
+            }
         }
-    }         
+    }
+
+.container-1 {
+    .card {
+        h1 {
+            font-family: $flexBoxFontHeader;
+            p {
+                font-family: $flexBoxFontText;
+            }
+        }
+    }
 }
 
 .jumboHeading {
