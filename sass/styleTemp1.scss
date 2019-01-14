@@ -119,6 +119,37 @@ nav {
     }
 }
 
+.container-3 {
+    @include flexBox;
+    .card {
+        @include cards;
+                   img {
+                        @include prodImg;
+            }
+        }
+    }
+
+.container-3 {
+    .card {
+        h1 {
+            @include cardHeading;
+        }
+    }
+}
+.container-3 {
+    .card {
+        p {
+            @include cardText;
+        }
+    }
+}
+
+.container-3 {
+    button {
+        @include cardButtons;
+    }
+}
+
 .aboutSec {
     padding: 20px;
     background-image: linear-gradient($flexBoxColorPurple, $flexBoxColorGreen);    
@@ -144,7 +175,7 @@ nav {
 }
 
 .contactSec {
-    background-image: linear-gradient($flexBoxColorGreen, $flexBoxColorPurple);    
+    background: $flexBoxColorGreen;
     p {
         @include cardText;
         font-weight: bold;
@@ -156,5 +187,6 @@ footer {
     p {
         @include cardText;
         font-weight: bolder;
+        text-shadow: 0px 0px 15px white;
     }
 }
