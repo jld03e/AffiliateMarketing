@@ -2,6 +2,16 @@
 
 @import 'colors';
 
+@media (max-width: 850px) {
+    .container-1 {
+        flex-direction: column;
+        justify-content: space-evenly;
+        .card {
+            max-width: 100%;
+        }
+    }
+}
+
 // body {
 //     background-color: black;
 // }

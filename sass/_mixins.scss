@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 50px;
+    box-sizing: border-box;
 }
 
 @mixin navBar {
@@ -32,8 +33,7 @@
     background-color: $flexBoxColorGreen;
     padding: 10px;
     border-radius: 10px;
-    height: 30%;
-    width: 30%;
+    box-sizing: border-box;
     // box-shadow: 10px 10px 10px 10px $flexBoxColorGreen;
 }
 
