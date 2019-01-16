@@ -5,6 +5,7 @@
     justify-content: space-evenly;
     padding: 50px;
     box-sizing: border-box;
+    align-items: center;
 }
 
 @mixin navBar {
@@ -30,8 +31,7 @@
 }
 
 @mixin cards {
-    max-width: 80%;
-    flex-direction: row;
+    flex-basis: 30%;
     border: solid 4px black;
     background-color: $flexBoxColorGreen;
     padding: 10px;

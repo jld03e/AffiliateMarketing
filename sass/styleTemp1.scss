@@ -2,13 +2,12 @@
 
 @import 'colors';
 
-@media (max-width: 850px) {
-    .container-1 {
+@media (min-width: 400px) {
+    .container-1, .container-2, .container-3 {
         flex-direction: column;
         justify-content: space-evenly;
-        .card {
-            max-width: 100%;
-        }
+    } .card {
+        flex-basis: 30%;
     }
 }
 
@@ -27,6 +26,7 @@ nav {
     }
 }
 
+@media (min-width: 768px) {
 .jumboHeading {
     @include heading;
     @include headingImg;
@@ -64,7 +64,6 @@ nav {
 }
 
 .container-1 {
-    display: flex;
     @include flexBox;
     .card {
         @include cards;
@@ -95,8 +94,70 @@ nav {
     }
 }
 
+.container-2 {
+    @include flexBox;
+    .card {
+        @include cards;
+                   img {
+                        @include prodImg;
+            }
+        }
+    }
+
+.container-2 {
+    .card {
+        h1 {
+            @include cardHeading;
+        }
+    }
+}
+.container-2 {
+    .card {
+        p {
+            @include cardText;
+        }
+    }
+}
+
+.container-2 {
+    button {
+        @include cardButtons;
+    }
+}
+
+.container-3 {
+    @include flexBox;
+    .card {
+        @include cards;
+                   img {
+                        @include prodImg;
+            }
+        }
+    }
+
+.container-3 {
+    .card {
+        h1 {
+            @include cardHeading;
+        }
+    }
+}
+.container-3 {
+    .card {
+        p {
+            @include cardText;
+        }
+    }
+}
+
+.container-3 {
+    button {
+        @include cardButtons;
+    }
+}
+
 .aboutSec {
-    padding: 2px;
+    padding: 20px;
     background-image: linear-gradient($flexBoxColorPurple, $flexBoxColorGreen);    
     h1 {
         @include cardHeading;
@@ -134,4 +195,6 @@ footer {
         font-weight: bolder;
         text-shadow: 0px 0px 15px white;
     }
+}
+
 }
