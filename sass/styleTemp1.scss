@@ -12,10 +12,6 @@
     }
 }
 
-// body {
-//     background-color: black;
-// }
-
 nav {
     @include navBar;
     ul {
@@ -68,6 +64,7 @@ nav {
 }
 
 .container-1 {
+    display: flex;
     @include flexBox;
     .card {
         @include cards;
@@ -93,75 +90,13 @@ nav {
 }
 
 .container-1 {
-    button {
-        @include cardButtons;
-    }
-}
-
-.container-2 {
-    @include flexBox;
-    .card {
-        @include cards;
-                   img {
-                        @include prodImg;
-            }
-        }
-    }
-
-.container-2 {
-    .card {
-        h1 {
-            @include cardHeading;
-        }
-    }
-}
-.container-2 {
-    .card {
-        p {
-            @include cardText;
-        }
-    }
-}
-
-.container-2 {
-    button {
-        @include cardButtons;
-    }
-}
-
-.container-3 {
-    @include flexBox;
-    .card {
-        @include cards;
-                   img {
-                        @include prodImg;
-            }
-        }
-    }
-
-.container-3 {
-    .card {
-        h1 {
-            @include cardHeading;
-        }
-    }
-}
-.container-3 {
-    .card {
-        p {
-            @include cardText;
-        }
-    }
-}
-
-.container-3 {
     button {
         @include cardButtons;
     }
 }
 
 .aboutSec {
-    padding: 20px;
+    padding: 2px;
     background-image: linear-gradient($flexBoxColorPurple, $flexBoxColorGreen);    
     h1 {
         @include cardHeading;

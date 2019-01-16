@@ -30,6 +30,9 @@
 }
 
 @mixin cards {
+    max-width: 80%;
+    flex-direction: row;
+    border: solid 4px black;
     background-color: $flexBoxColorGreen;
     padding: 10px;
     border-radius: 10px;
