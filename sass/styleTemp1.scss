@@ -3,6 +3,13 @@
 @import 'colors';
 
 @media (max-width: 1023px) {
+    nav { 
+        ul {
+            li {
+                font-size: 20px;
+            }
+        }
+    }
     .jumboHeading {
         h1 {
         font-size: 55px;
@@ -20,6 +27,11 @@
 }
 
 @media (max-width: 800px) {
+    nav {
+        li {
+            font-size: 20px;
+        }
+    }
     .jumboHeading {
         h1 {
         font-size: 55px;
@@ -41,7 +53,6 @@ nav {
     ul {
         @include uListNav;
         li {
-            font-size: 75px;
             @include lItemNav;
              a {
                 color: $flexBoxColorGreen;
