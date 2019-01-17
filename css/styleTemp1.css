@@ -1,9 +1,9 @@
-@media (max-width: 1023px) { nav ul li { font-size: 20px; }
+@media (max-width: 1024px) { nav ul li a { font-size: 30px; }
   .jumboHeading h1 { font-size: 55px; }
   .jumboHeading h2 { font-size: 35px; }
   .container-1, .container-2, .container-3 { flex-direction: column; justify-content: space-evenly; }
   .card { flex-basis: 30%; } }
-@media (max-width: 800px) { nav li { font-size: 20px; }
+@media (max-width: 800px) { nav ul li a { font-size: 20px; }
   .jumboHeading h1 { font-size: 55px; }
   .jumboHeading h2 { font-size: 35px; }
   .container-1, .container-2, .container-3 { flex-direction: column; justify-content: space-evenly; }

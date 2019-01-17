@@ -2,11 +2,11 @@
 
 @import 'colors';
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     nav { 
         ul {
-            li {
-                font-size: 20px;
+            li a {
+                font-size: 30px;
             }
         }
     }
@@ -27,9 +27,11 @@
 }
 
 @media (max-width: 800px) {
-    nav {
-        li {
-            font-size: 20px;
+    nav { 
+        ul {
+            li a {
+                font-size: 20px;
+            }
         }
     }
     .jumboHeading {
