@@ -30,12 +30,24 @@ nav {
     padding: 15px;
     h1 {
         color: $flexBoxColorGreen;
+        @include tablet {
+            font-size: 55px;
+        }
+        @include phone {
+            font-size: 55px;
+        }
     }
 }
 
 .jumboHeading {
     h2 {
         color: $flexBoxColorPurple;
+        @include tablet {
+            font-size: 35px;
+        }
+        @include phone {
+            font-size: 35px;
+        }
     }
 }
 
@@ -62,8 +74,22 @@ nav {
 
 .container-1 {
     @include flexBox;
+    @include tablet {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    @include phone {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     .card {
         @include cards;
+        @include tablet {
+            flex-basis: 30%;
+        }
+        @include phone {
+            flex-basis: 30%;
+        }
                    img {
                         @include prodImg;
             }
@@ -93,8 +119,22 @@ nav {
 
 .container-2 {
     @include flexBox;
+    @include tablet {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    @include phone {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     .card {
         @include cards;
+        @include tablet {
+            flex-basis: 30%;
+        }
+        @include phone {
+            flex-basis: 30%;
+        }
                    img {
                         @include prodImg;
             }
@@ -124,8 +164,22 @@ nav {
 
 .container-3 {
     @include flexBox;
+    @include tablet {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    @include phone {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     .card {
         @include cards;
+        @include tablet {
+            flex-basis: 30%;
+        }
+        @include phone {
+            flex-basis: 30%;
+        }
                    img {
                         @include prodImg;
             }
