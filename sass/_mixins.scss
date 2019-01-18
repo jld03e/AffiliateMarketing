@@ -1,3 +1,6 @@
+
+//Mixin used to update sizing of flexBox that will
+//contain the products to be sold.
 @mixin flexBox {
     background-color: $flexBoxColorPurple;
     display: flex;
@@ -8,6 +11,8 @@
     align-items: center;
 }
 
+
+//Mixin used for navigation bar
 @mixin navBar {
     top: 0px;
     background: $flexBoxColorPurple;
@@ -15,12 +20,15 @@
     padding: 5px;
 }
 
+//Mixin used to update list view of navBar
 @mixin uListNav {
     list-style-type: none;
     text-align: center;
     overflow: hidden;
 }
 
+//Mixin is a continuation of uListNav mixin
+//focuses on appearance of individual elements
 @mixin lItemNav {
     color: $flexBoxColorGreen;
     text-align: center;
@@ -30,6 +38,9 @@
     border-right: 2px solid black;
 }
 
+//Mixin used to update the card element's 
+//settings, appearance, dimensions, etc.
+//Where individual products will be presented.
 @mixin cards {
     flex-basis: 30%;
     border: solid 4px black;
@@ -38,7 +49,8 @@
     border-radius: 10px;
     box-sizing: border-box;
 }
-
+//mixin used to update the heading for 
+//individual cards
 @mixin cardHeading {
     text-align: center;
     color: $flexBoxColorPurple;
@@ -47,11 +59,15 @@
     font-weight: bold;
 }
 
+//mixin used to update the contents inside
+//each card.
 @mixin cardText {
     text-align: center;
     font-family: $flexBoxFontText;
 }
 
+//used to update the 'purchase' button in 
+//each card
 @mixin cardButtons {
     font-family: $flexBoxFontText;
     background-color: $flexBoxColorPurple;
@@ -67,6 +83,8 @@
     cursor: pointer;
 }
 
+//used to add styling to each image contained in
+//every card.
 @mixin prodImg {
     border: 5px solid white;
     border-radius: 5px;
@@ -78,6 +96,7 @@
     height: auto;    
 }
 
+//general use, border mixin.
 @mixin paraBord {
     border-radius: 15px;
     border: black;
@@ -86,6 +105,9 @@
     padding: 10px;
 }
 
+//mixin used for jumbotron heading.
+//contains the font, size, and alignment
+//used for the jumbotron text and content.
 @mixin heading {
     font-family: 'Righteous', cursive;
     text-shadow: 0px 0px 15px white;
@@ -94,6 +116,8 @@
     font-size: 65px;
 }
 
+//used to style the image used in the
+//background of the jumbotron.
 @mixin headingImg {
     padding: 20px;
     background-image: url("../images/jumboBack.jpg");
@@ -102,6 +126,7 @@
     background-repeat: no-repeat;
     background-size: cover; }
 
+//styling for the footer of the website
 @mixin footer {
     position: sticky;
     bottom: 0px;
@@ -109,6 +134,8 @@
     background: $flexBoxColorGreen;    
 }
 
+//these final two mixins focus on responsiveness for
+//certain elements in the website.
 @mixin tablet {
     @media (min-width: #{$tablet}) and (max-width: #{$desktop-width}) {
         @content;

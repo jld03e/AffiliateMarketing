@@ -16,26 +16,8 @@ $flexBoxColorDPurple: rgba(102, 51, 153, 1);
 $flexBoxFontHeader: 'Righteous', cursive;
 $flexBoxFontText: 'Open Sans', sans-serif;
 
-//breakpoint for media distinctions
+//breakpoint for media sizing
 
 $minPhone-width: 319px;
 $tablet: 800px;
 $desktop-width: 1024px;
-
-// @media (max-width: 1024px) {
-//     .container-1, .container-2, .container-3 {
-//         flex-direction: column;
-//         justify-content: space-evenly;
-//     } .card {
-//         flex-basis: 30%;
-//     }
-// }
-
-// @media (max-width: 800px) {
-//     .container-1, .container-2, .container-3 {
-//         flex-direction: column;
-//         justify-content: space-evenly;
-//     } .card {
-//         flex-basis: 30%;
-//     }
-// }
