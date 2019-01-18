@@ -1,16 +1,7 @@
 // light theme colors; includes light green and purple
-$navBarColorGreen: rgba(123, 239, 178, 1);
-$navBarColorPurple: rgba(213, 184, 255, 1);
 
 $flexBoxColorGreen:rgba(200, 247, 197, 1);
 $flexBoxColorPurple: rgba(190, 144, 212,1);
-
-$flexBoxFontHeader: 'Righteous', cursive;
-$flexBoxFontText: 'Open Sans', sans-serif;
-
-
-
-
 
 // theme colors for dark green and purple
 
@@ -19,3 +10,12 @@ $navBarColorDPurple: rgba(103, 65, 114, 1);
 
 $flexBoxColorDGreen: rgba(0, 177, 106, 1);
 $flexBoxColorDPurple: rgba(102, 51, 153, 1);
+
+// fonts used for templates
+
+$flexBoxFontHeader: 'Righteous', cursive;
+$flexBoxFontText: 'Open Sans', sans-serif;
+
+//breakpoint for media distinctions
+
+$breakpoint-tablet: 800px;

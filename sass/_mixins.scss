@@ -37,7 +37,6 @@
     padding: 10px;
     border-radius: 10px;
     box-sizing: border-box;
-    // box-shadow: 10px 10px 10px 10px $flexBoxColorGreen;
 }
 
 @mixin cardHeading {
@@ -55,7 +54,7 @@
 
 @mixin cardButtons {
     font-family: $flexBoxFontText;
-    background-color: $flexBoxColorPurple; /* Green */
+    background-color: $flexBoxColorPurple;
     border: 4px solid white;
     border-radius: 4px;
     color: white;
