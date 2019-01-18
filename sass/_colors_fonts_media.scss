@@ -18,4 +18,54 @@ $flexBoxFontText: 'Open Sans', sans-serif;
 
 //breakpoint for media distinctions
 
-$breakpoint-tablet: 800px;
+$minPhone-width: 425px;
+$tablet: 768px;
+$desktop-width: 1024px;
+
+// @media (max-width: 1024px) {
+//     nav { 
+//         ul {
+//             li a {
+//                 font-size: 30px;
+//             }
+//         }
+//     }
+//     .jumboHeading {
+//         h1 {
+//         font-size: 55px;
+//         }
+//         h2 {
+//             font-size: 35px;
+//         }
+//     }
+//     .container-1, .container-2, .container-3 {
+//         flex-direction: column;
+//         justify-content: space-evenly;
+//     } .card {
+//         flex-basis: 30%;
+//     }
+// }
+
+// @media (max-width: 800px) {
+//     nav { 
+//         ul {
+//             li a {
+//                 font-size: 20px;
+//             }
+//         }
+//     }
+//     .jumboHeading {
+//         h1 {
+//         font-size: 55px;
+//         }
+//         h2 {
+//             font-size: 35px;
+//         }
+//     }
+//     .container-1, .container-2, .container-3 {
+//         flex-direction: column;
+//         justify-content: space-evenly;
+//     } .card {
+//         flex-basis: 30%;
+//     }
+// }

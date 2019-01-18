@@ -1,17 +1,9 @@
-@media (max-width: 1024px) { nav ul li a { font-size: 30px; }
-  .jumboHeading h1 { font-size: 55px; }
-  .jumboHeading h2 { font-size: 35px; }
-  .container-1, .container-2, .container-3 { flex-direction: column; justify-content: space-evenly; }
-  .card { flex-basis: 30%; } }
-@media (max-width: 800px) { nav ul li a { font-size: 20px; }
-  .jumboHeading h1 { font-size: 55px; }
-  .jumboHeading h2 { font-size: 35px; }
-  .container-1, .container-2, .container-3 { flex-direction: column; justify-content: space-evenly; }
-  .card { flex-basis: 30%; } }
 nav { top: 0px; background: #be90d4; font-family: 'Righteous', cursive; padding: 5px; }
 nav ul { list-style-type: none; text-align: center; overflow: hidden; }
 nav ul li { color: #c8f7c5; text-align: center; display: inline; padding: 7px 12px; font-size: 35px; border-right: 2px solid black; }
 nav ul li a { color: #c8f7c5; text-decoration: none; }
+@media (min-width: 768px) and (max-width: 1024px) { nav ul li a { font-size: 30px; } }
+@media (min-width: minPhone-width) and (max-width: tablet-1px) { nav ul li a { font-size: 20px; } }
 
 .jumboHeading { font-family: 'Righteous', cursive; text-shadow: 0px 0px 15px white; text-align: center; padding: 30px; font-size: 65px; padding: 20px; background-image: url("../images/jumboBack.jpg"); height: 500px; background-position: center; background-repeat: no-repeat; background-size: cover; padding: 15px; }
 .jumboHeading h1 { color: #c8f7c5; }

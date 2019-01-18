@@ -2,54 +2,6 @@
 
 @import '_colors_fonts_media';
 
-@media (max-width: 1024px) {
-    nav { 
-        ul {
-            li a {
-                font-size: 30px;
-            }
-        }
-    }
-    .jumboHeading {
-        h1 {
-        font-size: 55px;
-        }
-        h2 {
-            font-size: 35px;
-        }
-    }
-    .container-1, .container-2, .container-3 {
-        flex-direction: column;
-        justify-content: space-evenly;
-    } .card {
-        flex-basis: 30%;
-    }
-}
-
-@media (max-width: 800px) {
-    nav { 
-        ul {
-            li a {
-                font-size: 20px;
-            }
-        }
-    }
-    .jumboHeading {
-        h1 {
-        font-size: 55px;
-        }
-        h2 {
-            font-size: 35px;
-        }
-    }
-    .container-1, .container-2, .container-3 {
-        flex-direction: column;
-        justify-content: space-evenly;
-    } .card {
-        flex-basis: 30%;
-    }
-}
-
 nav {
     @include navBar;
     ul {
@@ -59,6 +11,14 @@ nav {
              a {
                 color: $flexBoxColorGreen;
                 text-decoration: none;
+
+                @include tablet {
+                    font-size: 30px;
+                }
+
+                @include phone {
+                    font-size: 20px;
+                }
             }
         }
     }
