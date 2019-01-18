@@ -1,0 +1,249 @@
+@import 'mixins';
+
+@import '_colors_fonts_media';
+
+nav {
+    @include navBar;
+    ul {
+        @include uListNav;
+        li {
+            @include lItemNav;
+             a {
+                color: $flexBoxColorGreen;
+                text-decoration: none;
+
+                @include tablet {
+                    font-size: 30px;
+                }
+
+                @include phone {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.jumboHeading {
+    @include heading;
+    @include headingImg;
+    padding: 15px;
+    h1 {
+        color: $flexBoxColorGreen;
+        @include tablet {
+            font-size: 55px;
+        }
+        @include phone {
+            font-size: 55px;
+        }
+    }
+}
+
+.jumboHeading {
+    h2 {
+        color: $flexBoxColorPurple;
+        @include tablet {
+            font-size: 35px;
+        }
+        @include phone {
+            font-size: 35px;
+        }
+    }
+}
+
+.recordsSec {
+    background-image: linear-gradient($flexBoxColorGreen, $flexBoxColorPurple);
+    padding: 20px;
+        h1 {
+            color: $flexBoxColorPurple;
+            font-family: $flexBoxFontHeader;
+            text-shadow: 0px 0px 5px white;
+            text-align: center;
+            font-size: 45px;
+    }
+}
+
+.recordsSec {
+        h2 {
+            text-align: center;
+            color: $flexBoxColorGreen;
+            font-family: $flexBoxFontHeader;
+            font-size: 35px;
+        }
+}
+
+.container-1 {
+    @include flexBoxD;
+    @include tablet {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    @include phone {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .card {
+        @include cards;
+        @include tablet {
+            flex-basis: 30%;
+        }
+        @include phone {
+            flex-basis: 30%;
+        }
+                   img {
+                        @include prodImg;
+            }
+        }
+    }
+
+.container-1 {
+    .card {
+        h1 {
+            @include cardHeading;
+        }
+    }
+}
+.container-1 {
+    .card {
+        p {
+            @include cardText;
+        }
+    }
+}
+
+.container-1 {
+    button {
+        @include cardButtons;
+    }
+}
+
+.container-2 {
+    @include flexBoxD;
+    @include tablet {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    @include phone {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .card {
+        @include cards;
+        @include tablet {
+            flex-basis: 30%;
+        }
+        @include phone {
+            flex-basis: 30%;
+        }
+                   img {
+                        @include prodImg;
+            }
+        }
+    }
+
+.container-2 {
+    .card {
+        h1 {
+            @include cardHeading;
+        }
+    }
+}
+.container-2 {
+    .card {
+        p {
+            @include cardText;
+        }
+    }
+}
+
+.container-2 {
+    button {
+        @include cardButtons;
+    }
+}
+
+.container-3 {
+    @include flexBoxD;
+    @include tablet {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    @include phone {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .card {
+        @include cards;
+        @include tablet {
+            flex-basis: 30%;
+        }
+        @include phone {
+            flex-basis: 30%;
+        }
+                   img {
+                        @include prodImg;
+            }
+        }
+    }
+
+.container-3 {
+    .card {
+        h1 {
+            @include cardHeading;
+        }
+    }
+}
+.container-3 {
+    .card {
+        p {
+            @include cardText;
+        }
+    }
+}
+
+.container-3 {
+    button {
+        @include cardButtons;
+    }
+}
+
+.aboutSec {
+    padding: 20px;
+    background-image: linear-gradient($flexBoxColorPurple, $flexBoxColorGreen);    
+    h1 {
+        @include cardHeading;
+        color: $flexBoxColorGreen;
+    }
+}
+
+.aboutSec {
+    p {
+        @include cardText;
+        font-weight: bold;
+    }
+}
+
+.contactSec {
+    background: $flexBoxColorGreen;
+    padding: 20px;
+    h1 {
+        @include cardHeading;
+    }
+}
+
+.contactSec {
+    background: $flexBoxColorGreen;
+    p {
+        @include cardText;
+        font-weight: bold;
+    }
+}
+
+footer {
+    @include footer;
+    p {
+        @include cardText;
+        font-weight: bolder;
+        text-shadow: 0px 0px 15px white;
+    }
+}

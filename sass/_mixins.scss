@@ -1,8 +1,18 @@
 
 //Mixin used to update sizing of flexBox that will
-//contain the products to be sold.
+//contain the products to be sold. #Light
 @mixin flexBox {
     background-color: $flexBoxColorPurple;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+@mixin flexBoxD {
+    background-color: $flexBoxColorBlue;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -29,6 +39,7 @@
 
 //Mixin is a continuation of uListNav mixin
 //focuses on appearance of individual elements
+//#Light
 @mixin lItemNav {
     color: $flexBoxColorGreen;
     text-align: center;
@@ -41,6 +52,7 @@
 //Mixin used to update the card element's 
 //settings, appearance, dimensions, etc.
 //Where individual products will be presented.
+//#Light
 @mixin cards {
     flex-basis: 30%;
     border: solid 4px black;
@@ -51,6 +63,7 @@
 }
 //mixin used to update the heading for 
 //individual cards
+//#Light
 @mixin cardHeading {
     text-align: center;
     color: $flexBoxColorPurple;
@@ -67,7 +80,7 @@
 }
 
 //used to update the 'purchase' button in 
-//each card
+//each card #Light
 @mixin cardButtons {
     font-family: $flexBoxFontText;
     background-color: $flexBoxColorPurple;
@@ -127,6 +140,7 @@
     background-size: cover; }
 
 //styling for the footer of the website
+//#Light
 @mixin footer {
     position: sticky;
     bottom: 0px;
