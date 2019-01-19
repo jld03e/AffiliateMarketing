@@ -84,25 +84,18 @@ nav {
     }
     .card {
         @include cardsD;
+        iframe {
+            @include prodVid;
+        }
         @include tablet {
             flex-basis: 30%;
         }
         @include phone {
             flex-basis: 30%;
         }
-                   img {
-                        @include prodImg;
-            }
         }
     }
 
-.container-1 {
-    .card {
-        iframe {
-            @include prodVid;
-        }
-    }
-}
 
 .container-1 {
     .card {
@@ -137,15 +130,15 @@ nav {
     }
     .card {
         @include cardsD;
+        iframe {
+            @include prodVid;
+        }
         @include tablet {
             flex-basis: 30%;
         }
         @include phone {
             flex-basis: 30%;
         }
-                   img {
-                        @include prodImg;
-            }
         }
     }
 
@@ -182,15 +175,15 @@ nav {
     }
     .card {
         @include cardsD;
+        iframe {
+            @include prodVid;
+        }
         @include tablet {
             flex-basis: 30%;
         }
         @include phone {
             flex-basis: 30%;
         }
-                   img {
-                        @include prodImg;
-            }
         }
     }
 
