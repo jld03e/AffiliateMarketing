@@ -98,6 +98,14 @@ nav {
 
 .container-1 {
     .card {
+        iframe {
+            @include prodVid;
+        }
+    }
+}
+
+.container-1 {
+    .card {
         h1 {
             @include cardHeadingD;
         }
