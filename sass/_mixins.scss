@@ -176,8 +176,6 @@
 }
 
 @mixin prodVid {
-    border: 5px solid white;
-    border-radius: 5px;
     height: 284px;
     width: 450px;
 }
@@ -233,8 +231,9 @@
 
 //these final two mixins focus on responsiveness for
 //certain elements in the website.
+
 @mixin tablet {
-    @media (min-width: #{$tablet}) and (max-width: #{$desktop-width}) {
+    @media (min-width: #{$tablet}) and (max-width: 1440px) {
         @content;
     }
 }

@@ -75,7 +75,7 @@ nav {
 .container-1 {
     @include flexBoxD;
     @include tablet {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
     }
     @include phone {
@@ -87,8 +87,9 @@ nav {
         iframe {
             @include prodVid;
             @include tablet {
+                padding-left: 25px;
                 height: 200px;
-                width: 200px;
+                width: 280px;
             }
         }
         @include tablet {
