@@ -8,7 +8,7 @@
     justify-content: space-evenly;
     padding: 50px;
     box-sizing: border-box;
-    align-items: center;
+    align-items: stretch;
 }
 
 //Mixin used to update sizing of flexBox that will
@@ -18,9 +18,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 50px;
+    padding: 25px;
     box-sizing: border-box;
-    align-items: center;
+    align-items: stretch;
 }
 
 
