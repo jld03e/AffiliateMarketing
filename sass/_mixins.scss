@@ -8,7 +8,7 @@
     justify-content: space-evenly;
     padding: 50px;
     box-sizing: border-box;
-    align-items: stretch;
+    align-items: center;
 }
 
 //Mixin used to update sizing of flexBox that will
@@ -18,9 +18,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 25px;
+    padding: 50px;
     box-sizing: border-box;
-    align-items: stretch;
+    align-items: center;
 }
 
 
@@ -183,17 +183,20 @@
 }
 
 @mixin prodVid {
-    height: 284px;
-    width: 450px;
-}
-
-//general use, border mixin.
-@mixin paraBord {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+//general use, border mixin.
+@mixin paraBord {
+    border-radius: 15px;
+    border: black;
+    border-style: solid;
+    border-width: 5px;
+    padding: 10px;
 }
 
 //mixin used for jumbotron heading.
