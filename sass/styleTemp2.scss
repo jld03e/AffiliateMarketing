@@ -130,27 +130,40 @@ nav {
 .container-2 {
     @include flexBoxD;
     @include tablet {
-        flex-basis: 20%;
-    }
+        flex-direction: column;
+        }
     @include phone {
-        flex-basis: 25%;
+        flex-direction: column;
     }
     .card {
-        @include cardsD;
+        @include cardsD;    
         .videoWrapper {
             @include videoWrapper;
+            @include tablet {
+                @include videoWrapper;
+                padding: 200px;
+            }
+            @include phone {
+                padding: 80px;
+            }
         }
         iframe {
             @include prodVid;
+            @include tablet {
+                width: 100%;
+                height: 100%;
+            }
+            @include phone {
+                width: 100%;
+                height: 100%;
+            }
         }
         }
     }
-
 
 .container-2 {
     .card {
         h1 {
-            padding: 10px;
             @include cardHeadingD;
         }
     }
@@ -171,29 +184,41 @@ nav {
 
 .container-3 {
     @include flexBoxD;
-    // @include tablet {
-    //     flex-basis: 20%;
-    // }
-    // @include phone {
-    //     flex-basis: 25%;
-
-    // }
+    @include tablet {
+        flex-direction: column;
+        }
+    @include phone {
+        flex-direction: column;
+    }
     .card {
-        @include cardsD;
+        @include cardsD;    
         .videoWrapper {
             @include videoWrapper;
+            @include tablet {
+                @include videoWrapper;
+                padding: 200px;
+            }
+            @include phone {
+                padding: 80px;
+            }
         }
         iframe {
             @include prodVid;
+            @include tablet {
+                width: 100%;
+                height: 100%;
+            }
+            @include phone {
+                width: 100%;
+                height: 100%;
+            }
         }
         }
     }
 
-
 .container-3 {
     .card {
         h1 {
-            padding: 10px;
             @include cardHeadingD;
         }
     }
