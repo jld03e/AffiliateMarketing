@@ -84,19 +84,11 @@ nav {
     }
     .card {
         @include cardsD;
+        .videoWrapper {
+            @include videoWrapper;
+        }
         iframe {
             @include prodVid;
-            @include tablet {
-                padding-left: 25px;
-                height: 200px;
-                width: 280px;
-            }
-        }
-        @include tablet {
-            flex-basis: 30%;
-        }
-        @include phone {
-            flex-basis: 30%;
         }
         }
     }
@@ -105,6 +97,7 @@ nav {
 .container-1 {
     .card {
         h1 {
+            padding: 10px;
             @include cardHeadingD;
         }
     }
@@ -126,7 +119,7 @@ nav {
 .container-2 {
     @include flexBoxD;
     @include tablet {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
     }
     @include phone {
@@ -135,25 +128,20 @@ nav {
     }
     .card {
         @include cardsD;
+        .videoWrapper {
+            @include videoWrapper;
+        }
         iframe {
             @include prodVid;
-            @include tablet {
-                height: 200px;
-                width: 200px;
-            }
-        }
-        @include tablet {
-            flex-basis: 30%;
-        }
-        @include phone {
-            flex-basis: 30%;
         }
         }
     }
 
+
 .container-2 {
     .card {
         h1 {
+            padding: 10px;
             @include cardHeadingD;
         }
     }
@@ -175,7 +163,7 @@ nav {
 .container-3 {
     @include flexBoxD;
     @include tablet {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
     }
     @include phone {
@@ -184,25 +172,20 @@ nav {
     }
     .card {
         @include cardsD;
+        .videoWrapper {
+            @include videoWrapper;
+        }
         iframe {
             @include prodVid;
-            @include tablet {
-                height: 200px;
-                width: 200px;
-            }
-        }
-        @include tablet {
-            flex-basis: 30%;
-        }
-        @include phone {
-            flex-basis: 30%;
         }
         }
     }
 
+
 .container-3 {
     .card {
         h1 {
+            padding: 10px;
             @include cardHeadingD;
         }
     }
