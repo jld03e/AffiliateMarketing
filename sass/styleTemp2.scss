@@ -75,24 +75,36 @@ nav {
 .container-1 {
     @include flexBoxD;
     @include tablet {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+        flex-direction: column;
+        }
     @include phone {
         flex-direction: column;
-        justify-content: space-evenly;
     }
     .card {
-        @include cardsD;
+        @include cardsD;    
         .videoWrapper {
             @include videoWrapper;
+            @include tablet {
+                @include videoWrapper;
+                padding: 200px;
+            }
+            @include phone {
+                padding: 80px;
+            }
         }
         iframe {
             @include prodVid;
+            @include tablet {
+                width: 100%;
+                height: 100%;
+            }
+            @include phone {
+                width: 100%;
+                height: 100%;
+            }
         }
         }
     }
-
 
 .container-1 {
     .card {
@@ -118,12 +130,10 @@ nav {
 .container-2 {
     @include flexBoxD;
     @include tablet {
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-basis: 20%;
     }
     @include phone {
-        flex-direction: column;
-        justify-content: space-evenly;
+        flex-basis: 25%;
     }
     .card {
         @include cardsD;
@@ -161,14 +171,13 @@ nav {
 
 .container-3 {
     @include flexBoxD;
-    @include tablet {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    @include phone {
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+    // @include tablet {
+    //     flex-basis: 20%;
+    // }
+    // @include phone {
+    //     flex-basis: 25%;
+
+    // }
     .card {
         @include cardsD;
         .videoWrapper {
