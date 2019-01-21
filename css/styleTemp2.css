@@ -7,10 +7,12 @@ nav ul li a { color: #f4d03f; text-decoration: none; }
 
 .jumboHeading { font-family: 'Righteous', cursive; text-shadow: 0px 0px 15px white; text-align: center; padding: 30px; font-size: 65px; padding: 20px; background-image: url("../images/jumboBack.jpg"); height: 500px; background-position: center; background-repeat: no-repeat; background-size: cover; padding: 15px; }
 .jumboHeading h1 { color: #013243; }
+@media (min-width: 600px) and (max-width: 1300px) { .jumboHeading h1 { font-size: 58px; } }
 @media (min-width: 600px) and (max-width: 900px) { .jumboHeading h1 { font-size: 55px; } }
 @media (min-width: 200px) and (max-width: 600px) { .jumboHeading h1 { font-size: 55px; } }
 
 .jumboHeading h2 { color: #f4d03f; }
+@media (min-width: 600px) and (max-width: 1300px) { .jumboHeading h2 { font-size: 40px; } }
 @media (min-width: 600px) and (max-width: 900px) { .jumboHeading h2 { font-size: 35px; } }
 @media (min-width: 200px) and (max-width: 600px) { .jumboHeading h2 { font-size: 35px; } }
 

@@ -30,6 +30,9 @@ nav {
     padding: 15px;
     h1 {
         color: $flexBoxColorBlue;
+        @include header {
+            font-size: 58px;
+        }
         @include tablet {
             font-size: 55px;
         }
@@ -42,6 +45,9 @@ nav {
 .jumboHeading {
     h2 {
         color: $flexBoxColorYellow;
+        @include header{
+            font-size: 40px;
+        }
         @include tablet {
             font-size: 35px;
         }

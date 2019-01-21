@@ -241,6 +241,12 @@
 //these final two mixins focus on responsiveness for
 //certain elements in the website.
 
+@mixin header {
+    @media (min-width: #{$tablet}) and (max-width: 1300px){
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (min-width: #{$tablet}) and (max-width: 900px) {
         @content;
