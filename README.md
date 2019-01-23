@@ -10,7 +10,7 @@ We provide you with the tools to use or customize the look and feel of the webpa
 
 ## Home Page
 
-Click here to go to the landing page of the templates.
+[Click here to go to the landing page of the templates.](https://jld03e.github.io/AffiliateMarketing/HP.html)
 
 ## Demo Screenshots
 
