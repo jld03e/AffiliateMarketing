@@ -1,6 +1,6 @@
 nav { position: sticky; top: 0px; border-radius: 15px; background: #3498db; font-family: "Staatliches", cursive; padding: 5px; }
 nav ul { list-style-type: none; display: block; overflow: hidden; }
-nav li { float: left; display: block; text-align: center; padding: 7px 12px; font-size: 20px; border-right: 2px solid black; }
+nav li { float: left; display: block; text-align: center; padding: 7px 12px; font-size: 45px; border-right: 2px solid black; }
 nav li a { text-decoration: none; color: black; }
 
 nav ul li:hover { text-shadow: 5px 5px 5px grey; }
