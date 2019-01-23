@@ -6,6 +6,7 @@ $jumboColor: rgba(254, 241, 96, 1);
 $fontFam: 'Staatliches', cursive;
 $fontFamMont: 'Montserrat', sans-serif;
 $aboutColor: rgba(200, 247, 197, 1);
+$footerColor: rgba(246, 36, 89, 1);
 
 @mixin flexBox {
     display: flex;
@@ -122,6 +123,10 @@ main {
     }
 }
 
+.theme {
+    padding: 45px;
+}
+
 img {
     @include prodImg;
     border: solid black;
@@ -130,4 +135,20 @@ img {
 figcaption {
     display: block;
     text-align: center;
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+    background: $footerColor;
+    @include bordRadius();
+    h1 {
+        font-family: $fontFam;
+    }
+    p {
+        font-family: $fontFamMont;
+    }
+    .contactInfo {
+        display: inline;
+    }
 }
