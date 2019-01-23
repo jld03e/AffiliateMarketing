@@ -38,18 +38,16 @@ nav {
     padding: 5px;
     ul {
         list-style-type: none;
-        display: block;
-        overflow: hidden;
-
-    }
-    li {
-        float: left;
-        display: block;
         text-align: center;
+        overflow: hidden;
+        }
+    li {
+        text-align: center;
+        display: inline;
         padding: 7px 12px;
-        font-size: 45px;
+        font-size: 35px;
         border-right: 2px solid black;
-    }
+        }
     li a{
         text-decoration: none;
         color: black;
