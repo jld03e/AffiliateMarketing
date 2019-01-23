@@ -1,3 +1,6 @@
+@import 'mixins';
+
+
 $navbarColor: rgba(52, 152, 219, 1);
 $jumboColor: rgba(254, 241, 96, 1);
 $fontFam: 'Staatliches', cursive;
@@ -72,7 +75,7 @@ nav ul li a:visited {
     background: $jumboColor;
     font-family: $fontFam;
     padding: 10px;
-    font-size: 35px;
+    font-size: 75px;
 }
 
 .about {
@@ -82,13 +85,14 @@ nav ul li a:visited {
     h3 {
         font-family: $fontFam;
         text-align: center;
-        font-size: 35px;
+        font-size: 80px;
     }
     p {
         @include paraBord();
         font-family: $fontFamMont;
         text-align: center;
-        line-height: 25px;
+        line-height: 30px;
+        font-size: 20px;
     }
 }
 
@@ -101,17 +105,31 @@ header {
 }
 
 header {
-    h3 {
+    h2 {
         font-family: $fontFam;
-        font-size: 35px;
+        font-size: 80px;
     }
 }
 
 main {
     h3 {
+    font-size: 45px;
     font-family: $fontFam;
+    text-align: center;
     }
-    p{
+    p {
+        font-size: 20px;
+        text-align: center;
         font-family: $fontFamMont;
     }
+}
+
+img {
+    @include prodImg;
+    border: solid black;
+    border-radius: 4px;
+}
+figcaption {
+    display: block;
+    text-align: center;
 }

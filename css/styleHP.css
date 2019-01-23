@@ -9,18 +9,22 @@ nav ul li a:link { text-decoration: none; }
 
 nav ul li a:visited { color: black; text-decoration: none; }
 
-.jumboHeading { border-radius: 15px; text-align: center; background: #fef160; font-family: "Staatliches", cursive; padding: 10px; font-size: 35px; }
+.jumboHeading { border-radius: 15px; text-align: center; background: #fef160; font-family: "Staatliches", cursive; padding: 10px; font-size: 75px; }
 
 .about { border-radius: 15px; background: #c8f7c5; padding: 10px; }
-.about h3 { font-family: "Staatliches", cursive; text-align: center; font-size: 35px; }
-.about p { border-radius: 15px; border: black; border-style: solid; border-width: 5px; padding: 10px; font-family: "Montserrat", sans-serif; text-align: center; line-height: 25px; }
+.about h3 { font-family: "Staatliches", cursive; text-align: center; font-size: 80px; }
+.about p { border-radius: 15px; border: black; border-style: solid; border-width: 5px; padding: 10px; font-family: "Montserrat", sans-serif; text-align: center; line-height: 30px; font-size: 20px; }
 
 header { text-align: center; }
 header h1 { font-size: 40px; font-family: "Staatliches", cursive; }
 
-header h3 { font-family: "Staatliches", cursive; font-size: 35px; }
+header h2 { font-family: "Staatliches", cursive; font-size: 80px; }
 
-main h3 { font-family: "Staatliches", cursive; }
-main p { font-family: "Montserrat", sans-serif; }
+main h3 { font-size: 45px; font-family: "Staatliches", cursive; text-align: center; }
+main p { font-size: 20px; text-align: center; font-family: "Montserrat", sans-serif; }
+
+img { border: 5px solid white; border-radius: 5px; display: block; align-items: center; margin-left: auto; margin-right: auto; max-width: 65%; height: auto; border: solid black; border-radius: 4px; }
+
+figcaption { display: block; text-align: center; }
 
 /*# sourceMappingURL=styleHP.css.map */
