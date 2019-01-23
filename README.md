@@ -14,7 +14,14 @@ Click here to go to the landing page of the templates.
 
 ## Demo Screenshots
 
-(Screenshots here.)
+                                            Light Theme:
+
+![alt text](images/lightTheme.jpg "Light Theme Screenshot")
+
+                                                Dark Theme:
+
+![alt text](images/darkTheme.jpg "Light Theme Screenshot")
+
 
 ## Use Case Examples:
 
