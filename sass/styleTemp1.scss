@@ -2,21 +2,36 @@
 
 @import '_colors_fonts_media';
 
+
+// This group of tag and SASS changes are all applicable to the nav bar.
 nav {
+    //This includes styling for the navbar itself, that includes back-
+    //ground color and dimension alignment. To update the background
+    //color, please, review the mixin file and search for the 'navBar'
+    //mixin.
     @include navBar;
     ul {
         @include uListNav;
         li {
+            //'lItemNav' allows for the updating of individual elements
+            //such as the color of the text.
             @include lItemNav;
              a {
+                //You can update the presentation of the text as a link
+                //is being pressed using the 'color' descriptor listed
+                //below, and also alter the text decorations for it as well.
                 color: $flexBoxColorGreen;
                 text-decoration: none;
-
+                //this mixin focuses on the view of the website in tablet mode.
                 @include tablet {
+                    //you can adjust fontsizes for the navbar in tablet mode, 
+                    //here.
                     font-size: 30px;
                 }
-
+                //this mixin focuses on the view of the website in phone mode.
                 @include phone {
+                    //you can adjust fontsizes for the navbar in tablet mode, 
+                    //here.
                     font-size: 20px;
                 }
             }
