@@ -30,3 +30,7 @@ We provide you with the tools to use or customize the look and feel of the webpa
 - Can also be used to sell electronic devices, clothing, perfumes, colognes, etc.
 
 - Also can be used to sell large scale items like motor vehicles, property, or even event access.
+
+## Instructions on How To Use:
+
+- To download the zip file, click on the green 'Clone or download' button or [click here.](https://github.com/jld03e/AffiliateMarketing/archive/master.zip)
