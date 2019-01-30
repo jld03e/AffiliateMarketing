@@ -177,6 +177,9 @@ nav {
     }
 }
 
+//Please Note: every previously mentioned note applies to every subsequently listed
+//container below; containers 2 and 3. each are structured the exam same way as
+//container 1, and use the same mixins.
 
 .container-2 {
     @include flexBox;
@@ -281,7 +284,8 @@ nav {
 
 .aboutSec {
     p {
-        //
+        //you can adjust the font type to make it anything besides the listed
+        //bold option, and can update the mixin 'cardText' to change the font.
         @include cardText;
         font-weight: bold;
     }
@@ -290,16 +294,22 @@ nav {
 //CONTACT INFORMATION SECTION
 
 .contactSec {
+    //change the background color using the option listed below
     background: $flexBoxColorGreen;
     padding: 20px;
     h1 {
+        //make similar header changes as before by updating the mixin listed
+        //here
         @include cardHeading;
     }
 }
 
 .contactSec {
+    //hange the background color of the page here
     background: $flexBoxColorGreen;
     p {
+        //you can adjust the font type to make it anything besides the listed
+        //bold option, and can update the mixin 'cardText' to change the font.
         @include cardText;
         font-weight: bold;
     }
