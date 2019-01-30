@@ -1,7 +1,10 @@
+//Access the mixins mentioned in each element listed below by clicking
+//on the links imported below.
 @import 'mixins';
 
 @import '_colors_fonts_media';
 
+//NAVBAR SECTION
 
 // This group of tag and SASS changes are all applicable to the nav bar.
 nav {
@@ -39,16 +42,29 @@ nav {
     }
 }
 
+//JUMBOTRON SECTION
+
 .jumboHeading {
+    //'heading' can be updated to adjust the font-size for the header.
     @include heading;
+    //you can update the image used in the background for the jumbo
+    //header through the mixin named below. this mixin will also 
+    //allow you to adjust the height of the jumbo header.
     @include headingImg;
     padding: 15px;
     h1 {
+        //text for the 'jumboheading' element can be adjusted here.
         color: $flexBoxColorGreen;
+        //this mixin focuses on the view of the website in tablet mode.
         @include tablet {
+            //you can adjust fontsizes for the jumboheader in tablet mode, 
+            //here.
             font-size: 55px;
         }
+        //this mixin focuses on the view of the website in phone mode.
         @include phone {
+            //you can adjust fontsizes for the jumboheader in tablet mode, 
+            //here.
             font-size: 55px;
         }
     }
@@ -56,6 +72,8 @@ nav {
 
 .jumboHeading {
     h2 {
+        //update the color of the text in the subheader for the jumboheader
+        //here, below.
         color: $flexBoxColorPurple;
         @include tablet {
             font-size: 35px;
@@ -66,11 +84,17 @@ nav {
     }
 }
 
+//RECORDS HEADING SECTION
+
 .recordsSec {
+    //change the gradient color options you wish to use for the product section
+    //of the website below.
     background-image: linear-gradient($flexBoxColorGreen, $flexBoxColorPurple);
     padding: 20px;
         h1 {
+            //update color of the heading for the products section.
             color: $flexBoxColorPurple;
+            //update the font used in the subheading for the products section.
             font-family: $flexBoxFontHeader;
             text-shadow: 0px 0px 5px white;
             text-align: center;
@@ -81,13 +105,23 @@ nav {
 .recordsSec {
         h2 {
             text-align: center;
+            //updates to the color of the subheading for the products section.
             color: $flexBoxColorGreen;
+            //update the font used in the subheading for the products section.
             font-family: $flexBoxFontHeader;
             font-size: 35px;
         }
 }
 
+
+//===============================================================================
+
+
+//PRODUCT CONTAINERS AND CARDS
+
 .container-1 {
+    //update the 'flexbox' mixin to change the background color for the containers
+    //holding the products.
     @include flexBox;
     @include tablet {
         flex-direction: column;
@@ -98,6 +132,8 @@ nav {
         justify-content: space-evenly;
     }
     .card {
+        //the 'cards' mixin contains access to the background color and border-radius
+        //to be used for each individual card on the page per product.
         @include cards;
         @include tablet {
             flex-basis: 30%;
@@ -106,11 +142,15 @@ nav {
             flex-basis: 30%;
         }
                    img {
+                       //adjust the size and presentation of each image contained in 
+                       //each card using the 'prodImg' mixin.
                         @include prodImg;
             }
         }
     }
 
+//This reference to the elements listed below is to give you access to adjustments
+//you can make to the heading of each card, how each products name is presented.
 .container-1 {
     .card {
         h1 {
@@ -118,6 +158,9 @@ nav {
         }
     }
 }
+
+//update the formatting of the text contained in each card, for the light theme,
+//that would include the presentation of the price's listed in each card.
 .container-1 {
     .card {
         p {
@@ -126,11 +169,14 @@ nav {
     }
 }
 
+//make changes to the look and feel of each button in each card using the mixin
+//'cardButtons'
 .container-1 {
     button {
         @include cardButtons;
     }
 }
+
 
 .container-2 {
     @include flexBox;
@@ -231,12 +277,17 @@ nav {
     }
 }
 
+//ABOUT SECTION
+
 .aboutSec {
     p {
+        //
         @include cardText;
         font-weight: bold;
     }
 }
+
+//CONTACT INFORMATION SECTION
 
 .contactSec {
     background: $flexBoxColorGreen;
@@ -253,6 +304,8 @@ nav {
         font-weight: bold;
     }
 }
+
+//FOOTER SECTION
 
 footer {
     @include footer;
