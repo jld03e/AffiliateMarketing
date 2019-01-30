@@ -1,22 +1,45 @@
+//Access the mixins mentioned in each element listed below by clicking
+//on the links imported below.
 @import 'mixins';
 
 @import '_colors_fonts_media';
 
+//PLEASE NOTE****
+//mixins labeled 'tablet' and 'phone' respectively focus solely on providing
+//viewpoint breakpoints for tablet and phone usage. This helps with establish-
+//ing responsiveness across mobile platforms. You can adjust the sizing of
+//elements within those breakpoints, but the dimensions should go untouched.
+//***
+
+//NAVBAR SECTION
+
+// This group of tag and SASS changes are all applicable to the nav bar.
 nav {
+    //This includes styling for the navbar itself, that includes back-
+    //ground color and dimension alignment. To update the background
+    //color, please, review the mixin file and search for the 'navBarD'
+    //mixin.
     @include navBarD;
     ul {
         @include uListNav;
         li {
+            //'lItemNavD' allows for the updating of individual elements
+            //such as the color of the text.
             @include lItemNavD;
              a {
+                //You can update the presentation of the text as a link
+                //is being pressed using the 'color' descriptor listed
+                //below, and also alter the text decorations for it as well.
                 color: $flexBoxColorYellow;
                 text-decoration: none;
-
                 @include tablet {
+                    //you can adjust fontsizes for the navbar in tablet mode, 
+                    //here.
                     font-size: 30px;
                 }
-
                 @include phone {
+                    //you can adjust fontsizes for the navbar in tablet mode, 
+                    //here.
                     font-size: 20px;
                 }
             }
@@ -24,19 +47,31 @@ nav {
     }
 }
 
+//JUMBOTRON SECTION
+
 .jumboHeading {
+    //'heading' can be updated to adjust the font-size for the header.
     @include heading;
+    //you can update the image used in the background for the jumbo
+    //header through the mixin named below. this mixin will also 
+    //allow you to adjust the height of the jumbo header.
     @include headingImg;
     padding: 15px;
     h1 {
+        //text for the 'jumboheading' element can be adjusted here.
         color: $flexBoxColorBlue;
+        //this mixin focuses on the view of the website in tablet mode.
         @include header {
+            //you can adjust fontsizes for the jumboheader in tablet mode, 
+            //here.
             font-size: 58px;
         }
         @include tablet {
             font-size: 55px;
         }
         @include phone {
+            //you can adjust fontsizes for the jumboheader in tablet mode, 
+            //here.
             font-size: 55px;
         }
     }
@@ -44,6 +79,8 @@ nav {
 
 .jumboHeading {
     h2 {
+        //update the color of the text in the subheader for the jumboheader
+        //here, below.
         color: $flexBoxColorYellow;
         @include header{
             font-size: 40px;
@@ -57,11 +94,17 @@ nav {
     }
 }
 
+//RECORDS HEADING SECTION
+
 .recordsSec {
+    //change the gradient color options you wish to use for the product section
+    //of the website below.
     background-image: linear-gradient($flexBoxColorYellow, $flexBoxColorBlue);
     padding: 20px;
         h1 {
+            //update color of the heading for the products section.
             color: $flexBoxColorBlue;
+            //update the font used in the subheading for the products section.
             font-family: $flexBoxFontHeader;
             text-shadow: 0px 0px 5px white;
             text-align: center;
@@ -72,13 +115,95 @@ nav {
 .recordsSec {
         h2 {
             text-align: center;
+            //updates to the color of the subheading for the products section.
             color: $flexBoxColorYellow;
+            //update the font used in the subheading for the products section.
             font-family: $flexBoxFontHeader;
             font-size: 35px;
         }
 }
 
+
+//===============================================================================
+
+
+//PRODUCT CONTAINERS AND CARDS
+
 .container-1 {
+    //update the 'flexboxD' mixin to change the background color for the containers
+    //holding the products.
+    @include flexBoxD;
+    @include tablet {
+        flex-direction: column;
+        }
+    @include phone {
+        flex-direction: column;
+    }
+    .card {
+        //the 'cardsD' mixin contains access to the background color and border-radius
+        //to be used for each individual card on the page per product.
+        @include cardsD;    
+        .videoWrapper {
+            @include videoWrapper;
+            @include tablet {
+                @include videoWrapper;
+                padding: 200px;
+            }
+            @include phone {
+                padding: 80px;
+            }
+        }
+        //PLEASE NOTE***
+        //For the "styling" listed here for the 'iframe' tag, this will focus primarily on
+        //the sizing of the video player, and has been calibrated to be mobile responsive
+        //across tablet and phone views
+        iframe {
+            @include prodVid;
+            @include tablet {
+                width: 100%;
+                height: 100%;
+            }
+            @include phone {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        }
+    }
+
+//This reference to the elements listed below is to give you access to adjustments
+//you can make to the heading of each card, how each products name is presented.
+.container-1 {
+    .card {
+        h1 {
+            @include cardHeadingD;
+        }
+    }
+}
+
+//update the formatting of the text contained in each card, for the light theme,
+//that would include the presentation of the price's listed in each card.
+.container-1 {
+    .card {
+        p {
+            @include cardText;
+        }
+    }
+}
+
+//make changes to the look and feel of each button in each card using the mixin
+//'cardButtons'
+.container-1 {
+    button {
+        @include cardButtonsD;
+    }
+}
+
+//Please Note: every previously mentioned note applies to every subsequently listed
+//container below; containers 2 and 3. each are structured the exam same way as
+//container 1, and use the same mixins.
+
+.container-2 {
     @include flexBoxD;
     @include tablet {
         flex-direction: column;
@@ -112,61 +237,6 @@ nav {
         }
     }
 
-.container-1 {
-    .card {
-        h1 {
-            @include cardHeadingD;
-        }
-    }
-}
-.container-1 {
-    .card {
-        p {
-            @include cardText;
-        }
-    }
-}
-
-.container-1 {
-    button {
-        @include cardButtonsD;
-    }
-}
-
-.container-2 {
-    @include flexBoxD;
-    @include tablet {
-        flex-direction: column;
-        }
-    @include phone {
-        flex-direction: column;
-    }
-    .card {
-        @include cardsD;    
-        .videoWrapper {
-            @include videoWrapper;
-            @include tablet {
-                @include videoWrapper;
-                padding: 200px;
-            }
-            @include phone {
-                padding: 80px;
-            }
-        }
-        iframe {
-            @include prodVid;
-            @include tablet {
-                width: 100%;
-                height: 100%;
-            }
-            @include phone {
-                width: 100%;
-                height: 100%;
-            }
-        }
-        }
-    }
-
 .container-2 {
     .card {
         h1 {
@@ -242,9 +312,13 @@ nav {
         @include cardButtonsD;
     }
 }
+
+//ABOUT SECTION
 
 .aboutSec {
     padding: 20px;
+    //Adjust the colors of the background or implaement a radically different
+    //background here.
     background-image: linear-gradient($flexBoxColorBlue, $flexBoxColorYellow);    
     h1 {
         @include cardHeadingD;
@@ -254,26 +328,38 @@ nav {
 
 .aboutSec {
     p {
+        //you can adjust the font type to make it anything besides the listed
+        //bold option, and can update the mixin 'cardText' to change the font.
         @include cardText;
         font-weight: bold;
     }
 }
 
+//CONTACT INFORMATION SECTION
+
 .contactSec {
+    //change the background color using the option listed below
     background: $flexBoxColorYellow;
     padding: 20px;
     h1 {
+        //make similar header changes as before by updating the mixin listed
+        //here
         @include cardHeadingD;
     }
 }
 
 .contactSec {
+    //change the background color of the page here
     background: $flexBoxColorYellow;
     p {
+        //you can adjust the font type to make it anything besides the listed
+        //bold option, and can update the mixin 'cardText' to change the font.
         @include cardText;
         font-weight: bold;
     }
 }
+
+//FOOTER SECTION
 
 footer {
     @include footerD;

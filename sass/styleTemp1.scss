@@ -4,6 +4,13 @@
 
 @import '_colors_fonts_media';
 
+//PLEASE NOTE****
+//mixins labeled 'tablet' and 'phone' respectively focus solely on providing
+//viewpoint breakpoints for tablet and phone usage. This helps with establish-
+//ing responsiveness across mobile platforms. You can adjust the sizing of
+//elements within those breakpoints, but the dimensions should go untouched.
+//***
+
 //NAVBAR SECTION
 
 // This group of tag and SASS changes are all applicable to the nav bar.
@@ -25,13 +32,11 @@ nav {
                 //below, and also alter the text decorations for it as well.
                 color: $flexBoxColorGreen;
                 text-decoration: none;
-                //this mixin focuses on the view of the website in tablet mode.
                 @include tablet {
                     //you can adjust fontsizes for the navbar in tablet mode, 
                     //here.
                     font-size: 30px;
                 }
-                //this mixin focuses on the view of the website in phone mode.
                 @include phone {
                     //you can adjust fontsizes for the navbar in tablet mode, 
                     //here.
@@ -55,13 +60,11 @@ nav {
     h1 {
         //text for the 'jumboheading' element can be adjusted here.
         color: $flexBoxColorGreen;
-        //this mixin focuses on the view of the website in tablet mode.
         @include tablet {
             //you can adjust fontsizes for the jumboheader in tablet mode, 
             //here.
             font-size: 55px;
         }
-        //this mixin focuses on the view of the website in phone mode.
         @include phone {
             //you can adjust fontsizes for the jumboheader in tablet mode, 
             //here.
@@ -271,16 +274,18 @@ nav {
     }
 }
 
+//ABOUT SECTION
+
 .aboutSec {
     padding: 20px;
+    //Adjust the colors of the background or implaement a radically different
+    //background here.
     background-image: linear-gradient($flexBoxColorPurple, $flexBoxColorGreen);    
     h1 {
         @include cardHeading;
         color: $flexBoxColorGreen;
     }
 }
-
-//ABOUT SECTION
 
 .aboutSec {
     p {
@@ -305,7 +310,7 @@ nav {
 }
 
 .contactSec {
-    //hange the background color of the page here
+    //change the background color of the page here
     background: $flexBoxColorGreen;
     p {
         //you can adjust the font type to make it anything besides the listed
